@@ -1,0 +1,11 @@
+{
+  "url": "https://serenity.is/demo/",
+  "user": "admin",
+  "password": "serenity",
+  "browser": "chrome",
+  "businessUnitName": "Choucair",
+  "meetingName": "Interview",
+  "meetingNumber": "123456"
+
+
+}
