@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat("gradle clean test aggregate")
+                        bat("gradle clean test")
                         echo 'Ejecucion de pruebas exitosa'
 
                     } catch (e) {
