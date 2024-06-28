@@ -1,19 +1,76 @@
-# Prueba Tecnica de automatizacion 
+# StartSharp Automation Project
 
-## Informacion general
-* Se realiza Automatización de pruebas sobre la página  [StartSharp](https://demo.serenity.is "StartSharp"), se implementan dos test, en el primero se comprueba la creacion correcta de una unidad de negocio (organizacion) en el sistema, en el segundo se comprueba el correcto agendamiento de una reunion segun los parametros solictados.
-* El proyecto esta consevido bajo el patron de diseño POM (Page Object Model).
-*  El archivo `Informe.pdf`" contiene la resolucion a alguno de los criterios planetados en la prueba tecnica.
-* Los archivos `Jenkinsfile` y `sonar-project.properties` permiten la correcta sincronizacion con Jenkis y sonarqube respectivamente.
-* Cada feature  se puede ejecutar desde la  clase  Runner, ubicada en `src > test > java > co > choucair > runners`
+This project automates tests for the StartSharp web application. It includes two tests: one verifying the correct creation of a business unit (organization) in the system, and another verifying the correct scheduling of a meeting according to specified parameters. The project follows the Page Object Model (POM) design pattern.
 
-## Construido con:
+## Table of Contents
+- [General Information](#general-information)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Running Tests](#running-tests)
+- [Jenkins and SonarQube Integration](#jenkins-and-sonarqube-integration)
+- [Contributing](#contributing)
+- [Author](#author)
 
-* [Java 8](https://docs.oracle.com/javase/8/docs/ "Java 8")
-* [Cucumber](https://cucumber.io/docs/cucumber/ "Cucumber")
-* [Gradle](https://docs.gradle.org/current/userguide/userguide.html "Gradle")
-* [Serenity](https://serenity-bdd.github.io/docs/tutorials/first_test "Serenity")
+## General Information
+- **Project Purpose**: Automate tests for StartSharp web application.
+- **Tests Implemented**:
+  1. **Business Unit Creation**: Verifies the correct creation of a business unit (organization).
+  2. **Meeting Scheduling**: Verifies the correct scheduling of a meeting with specified parameters.
+- **Design Pattern**: Page Object Model (POM).
+- **Documentation**: The `Informe.pdf` file contains the resolution to some of the criteria outlined in the technical test.
 
-## Autor:
+## Project Structure
+`
+StartSharpAutomation/
+├── src/
+│ ├── main/
+│ │ └── java/
+│ └── test/
+│ └── java/
+│ └── co/
+│ └── choucair/
+│ └── runners/
+│ └── Runner.java
+├── build.gradle
+├── Jenkinsfile
+├── sonar-project.properties
+└── README.md `
 
-* Jinson Stevenson Moreno Aguilar - jinson.moreno@gmail.com
+markdown
+Copiar código
+
+## Dependencies
+This project uses the following dependencies:
+- Java 8
+- Cucumber
+- Gradle
+- Serenity
+- Hamcrest
+- WebDriverManager
+- SLF4J
+- Jacoco
+
+Dependencies are defined in the `build.gradle` file.
+
+## Running Tests
+Each feature can be executed from the `Runner` class located at:
+src/test/java/co/choucair/runners/Runner.java
+
+## Jenkins and SonarQube Integration
+
+Jenkins: The Jenkinsfile allows for proper synchronization with Jenkins.
+SonarQube: The sonar-project.properties file allows for proper synchronization with SonarQube.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+Fork the repository.
+Create your feature branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -m 'Add your feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a pull request.
+
+## Author
+
+Jinson Stevenson Moreno Aguilar - jinson.moreno@gmail.com
